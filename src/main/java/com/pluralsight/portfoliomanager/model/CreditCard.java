@@ -17,6 +17,8 @@ public class CreditCard extends Account {
         setBalance(getBalance().subtract(amount));
     }
 
-    // TODO: override getValue(). Money you owe is worth less than nothing,
-    //       so a credit card's value is its balance as a negative number.
+    @Override
+    public BigDecimal getValue() {
+        return getBalance().negate();
+    }
 }
