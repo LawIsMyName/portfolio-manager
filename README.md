@@ -18,4 +18,4 @@ account2 can only use getValue() from the Valuable interface, along with methods
 Java determines which methods are available based on the variable's declared type, not the object it references.
 
 ## Diagram:
-![Class Diagram](fixed-assets)
+![Class Diagram](fixed-assets.png)
