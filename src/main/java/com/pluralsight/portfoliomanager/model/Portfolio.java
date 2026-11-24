@@ -38,6 +38,24 @@ public class Portfolio {
 
         return total;
     }
+
+    public Valuable getMostValuable() {
+
+        if (valuables.isEmpty()) {
+            return null;
+        }
+
+        Valuable mostValuable = valuables.get(0);
+
+        for (Valuable valuable : valuables) {
+
+            if (valuable.getValue().compareTo(mostValuable.getValue()) > 0) {
+                mostValuable = valuable;
+            }
+        }
+
+        return mostValuable;
+    }
 }
 
 
