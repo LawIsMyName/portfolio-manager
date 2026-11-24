@@ -22,6 +22,10 @@ public class Portfolio {
     public String getOwner() {
         return owner;
     }
+
+    public void add(Valuable valuable) {
+        valuables.add(valuable);
+    }
 }
 
 
