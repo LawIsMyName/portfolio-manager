@@ -20,5 +20,8 @@ public class FinanceApplication {
 
         Valuable account2 = new BankAccount(456, "Gary", new BigDecimal("1500"));
         //account2.deposit(new BigDecimal("100"));
+
+        System.out.println("Account 1: $" + account1.getValue());
+        System.out.println("Account 2: $" + account2.getValue());
     }
 }
