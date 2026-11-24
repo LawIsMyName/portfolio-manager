@@ -18,7 +18,7 @@ public class FinanceApplication {
         BankAccount account1 = new BankAccount(123, "Pam", new BigDecimal("12500"));
         account1.deposit(new BigDecimal("100"));
 
-        BankAccount account2 = new BankAccount(456, "Gary", new BigDecimal("1500"));
-        account2.deposit(new BigDecimal("100"));
+        Valuable account2 = new BankAccount(456, "Gary", new BigDecimal("1500"));
+        //account2.deposit(new BigDecimal("100"));
     }
 }

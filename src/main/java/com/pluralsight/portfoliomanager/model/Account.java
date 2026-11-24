@@ -29,6 +29,7 @@ public abstract class Account implements Valuable {
         this.balance = balance;
     }
 
+    @Override
     public BigDecimal getValue() {
         return balance;
     }
