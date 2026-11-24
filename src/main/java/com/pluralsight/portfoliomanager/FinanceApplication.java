@@ -23,5 +23,22 @@ public class FinanceApplication {
 
         System.out.println("Account 1: $" + account1.getValue());
         System.out.println("Account 2: $" + account2.getValue());
+
+        CreditCard creditCard = new CreditCard(789, "Gary", new BigDecimal("2500.00"));
+
+        Portfolio portfolio = new Portfolio("Personal Portfolio", "Gary");
+
+        portfolio.add(house);
+        portfolio.add(gold);
+        portfolio.add(ring);
+        portfolio.add(account1);
+        portfolio.add(creditCard);
+
+        System.out.println("\n---- PORTFOLIO SUMMARY ----");
+        System.out.println("Portfolio: " + portfolio.getName());
+        System.out.println("Owner: " + portfolio.getOwner());
+        System.out.printf("Total Value: $%.2f%n", portfolio.getValue());
+        System.out.printf("Most Valuable: $%.2f%n", portfolio.getMostValuable().getValue());
+        System.out.printf("Least Valuable: $%.2f%n", portfolio.getLeastValuable().getValue());
     }
 }

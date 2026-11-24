@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.math.BigDecimal;
 
-public class Portfolio {
+public class Portfolio  implements Valuable {
 
     private String name;
     private String owner;
@@ -28,6 +28,7 @@ public class Portfolio {
         valuables.add(valuable);
     }
 
+    @Override
     public BigDecimal getValue() {
 
         BigDecimal total = BigDecimal.ZERO;
