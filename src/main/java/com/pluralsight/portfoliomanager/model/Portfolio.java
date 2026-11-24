@@ -2,6 +2,7 @@ package com.pluralsight.portfoliomanager.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.math.BigDecimal;
 
 public class Portfolio {
 
@@ -25,6 +26,17 @@ public class Portfolio {
 
     public void add(Valuable valuable) {
         valuables.add(valuable);
+    }
+
+    public BigDecimal getValue() {
+
+        BigDecimal total = BigDecimal.ZERO;
+
+        for (Valuable valuable : valuables) {
+            total = total.add(valuable.getValue());
+        }
+
+        return total;
     }
 }
 
