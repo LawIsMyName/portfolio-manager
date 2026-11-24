@@ -17,5 +17,9 @@ account2 can only use getValue() from the Valuable interface, along with methods
 
 Java determines which methods are available based on the variable's declared type, not the object it references.
 
+### Why Portfolio Implements Valuable
+
+Portfolio implements Valuable because it has a total value of its own. This allows a portfolio to hold different types of assets, accounts, and even other portfolios.
+
 ## Diagram:
 ![Class Diagram](fixed-assets.png)
